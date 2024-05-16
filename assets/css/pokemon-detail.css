@@ -34,6 +34,20 @@ body {
     margin-top: -1.3rem;
 }
 
+.pokemon .detail {
+    background-color: red;
+}
+
+.pokemon .detail .types {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* .pokemon {
     display: flex;
     flex-direction: column;

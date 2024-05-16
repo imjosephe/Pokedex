@@ -11,6 +11,12 @@ function pokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types;
     pokemon.type = type;
 
+    pokemon.height = pokeDetail.height;
+    pokemon.weight = pokeDetail.weight;
+
+    const stats = pokeDetail.stats.map((typeSlot) => new Stat(typeSlot.stat.name, typeSlot.base_stat));
+    pokemon.stats = stats;
+
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
 
     return pokemon;
