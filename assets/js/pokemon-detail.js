@@ -19,17 +19,28 @@ function load() {
                                 ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                             </ol>
                             <div class="medidas">
-                                <div class="weight"> 
-                                    <h1 class="weightValue">${pokemon.weight} kg</h1>
-                                    <h2>Weight</h2>
+                                <div>
+                                    <div class="medidasImageValue">
+                                        <img class="medidasImage" src="https://raw.githubusercontent.com/imjosephe/Pokedex/811c55e0ed3314f7504222a26ca4bf0ec3e08649/assets/icons/weight-svgrepo-com.svg" 
+                                            alt="Balance">
+                                        <h1 class="medidasValue">${pokemon.weight} kg</h1>
+                                    </div>
+                                    <h1 class="medidasTitle">Weight</h1>
                                 </div>
                                 <hr class="divider">
-                                <div class="height"> 
-                                    <h1 class="heightValue">${pokemon.height} m</h1>
-                                    <h2>Height</h2>
+                                <div>
+                                    <div class="medidasImageValue">
+                                        <img class="medidasImage" src="https://raw.githubusercontent.com/imjosephe/Pokedex/811c55e0ed3314f7504222a26ca4bf0ec3e08649/assets/icons/ruler-svgrepo-com.svg" 
+                                            alt="Ruler">
+                                        <h1 class="medidasValue">${pokemon.height} m</h1>
+                                    </div>
+                                    
+                                    <h2 class="medidasTitle">Height</h2>
                                 </div>
                             </div>
                         </div>
                     </div>`                    
     pokemonDetail.innerHTML += newHtml;
+
+    
 }
