@@ -1,3 +1,79 @@
+.normal {
+    background-color: var(--normal-color);
+}
+
+.grass {
+    background-color: var(--grass-color);
+}
+
+.fire {
+    background-color: var(--fire-color);
+}
+
+.water {
+    background-color: var(--water-color);
+}
+
+.electric {
+    background-color: var(--electric-color);
+}
+
+.ice {
+    background-color: var(--ice-color);
+}
+
+.ground {
+    background-color: var(--ground-color);
+}
+
+.glying {
+    background-color: var(--glying-color);
+}
+
+.poison {
+    background-color: var(--poison-color);
+}
+
+.fighting {
+    background-color: var(--fighting-color);
+}
+
+.psychic {
+    background-color: var(--psychic-color);
+}
+
+.dark {
+    background-color: var(--dark-color);
+}
+
+.rock {
+    background-color: var(--rock-color);
+}
+
+.bug {
+    background-color: var(--bug-color);
+}
+
+.ghost {
+    background-color: var(--ghost-color);
+}
+
+.steel {
+    background-color: var(--steel-color);
+}
+
+.dragon {
+    background-color: var(--dragon-color);
+}
+
+.fairy {
+    background-color: var(--fairy-color);
+}
+
+.flying {
+    background-color: var(--flying-color);
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
