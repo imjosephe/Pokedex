@@ -8,7 +8,7 @@ let pokemonsLoaded = [];
 function showPokemonDetail(id) {    
     const serializedData = JSON.stringify(pokemonsLoaded[id - 1])
     sessionStorage.setItem('pokemonSelected', serializedData)
-    window.location.href = 'pokemon-detail.html'        
+    window.location.href = 'pokemon-detail.html'
 }
 
 function loadPokemonItens(offset, limit) {

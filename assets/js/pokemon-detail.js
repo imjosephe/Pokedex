@@ -1,4 +1,5 @@
 const pokemonDetail = document.getElementById('pokemonDetail');
+const pokemonStats = document.getElementById('pokemonStats');
 const serializedData = sessionStorage.getItem('pokemonSelected');
 let pokemon = Pokemon;
 
@@ -6,7 +7,7 @@ load()
 
 function load() {
     pokemon = JSON.parse(serializedData)
-    
+    console.log(pokemon)
     const newHtml = `<div class="pokemon">
                         <img class="image" src="${pokemon.photo}" 
                             alt="${pokemon.name}">
@@ -40,7 +41,21 @@ function load() {
                             </div>
                         </div>
                     </div>`                    
-    pokemonDetail.innerHTML += newHtml;
+    pokemonDetail.innerHTML += newHtml
+    loadStats(pokemon)
+}
 
-    
+function loadStats(pokemon) {
+    const newHtml = pokemon.stats.map((stat, index) => `
+        <li id=${index}>
+            <span class="statName">${stat.name}</span>
+            <div class="statBar">
+                <div class="statBarInner ${pokemon.type}" style="width: ${stat.baseStat}%;">
+                    ${stat.baseStat}
+                </div>
+            </div>
+        </li>
+    `).join('');
+
+    pokemonStats.innerHTML += newHtml;
 }
