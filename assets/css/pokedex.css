@@ -91,6 +91,11 @@
     color: #fff;
 }
 
+.pokemon:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
 .pokemon .number {
     color: #000;
     opacity: .5;
@@ -118,12 +123,11 @@
 }
 
 .pokemon .detail .types .type {    
-    color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
     font-size: .625rem;
     border-radius: 1rem;
-    filter: brightness(1.1);
+    filter: brightness(1.07);
     text-align: center;
 }
 
@@ -147,7 +151,12 @@
     background-color: #6c79db;
     border: none;
     border-radius: .825rem;
-    font-size: .625rem;
+    font-size: .825rem;
+}
+
+#loadMoreButton:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
 }
 
 @media screen and (min-width: 380px) {

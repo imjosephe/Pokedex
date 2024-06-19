@@ -74,6 +74,7 @@ function paint(pokemon) {
     document.documentElement.style.setProperty('--primary-color', `${colors[0]}`);
 
     const types = document.getElementsByClassName("type");
+
     for (let index = 0; index < types.length; index++) {
         const element = types[index];
         element.style.color = colors[index];
